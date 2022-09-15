@@ -9,5 +9,8 @@
         <module name="Private_Discord_bot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Private_Discord_bot" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
