@@ -7,7 +7,7 @@ public class Main {
 
     public static void run() {
         //DiscordInteractionsWrapper discord = new DiscordInteractionsWrapper();
-        discord("worst ");
+        discord("test ");
     }
 
     public static void discord(String test) {
