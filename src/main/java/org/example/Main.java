@@ -1,14 +1,11 @@
 package org.example;
 public class Main {
     public static void main(String[] args) {
-
-        test("kaas ");
+        run();
     }
 
-    public static void test(String temp) {
-        System.out.println(temp + temp + temp);
+    public static void run() {
+        org.example.DiscordInteractionsWrapper discord = new DiscordInteractionsWrapper();
+        discord.test("worst ");
     }
-
-
-
 }
