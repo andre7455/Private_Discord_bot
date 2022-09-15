@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="553b1ad3-2253-4d51-9025-ab53520e4be2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DiscordInteractionsWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DiscordInteractionsWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/discordInteractionsWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/discordInteractionsWrapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +44,15 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -100,7 +109,7 @@
       <workItem from="1662831108768" duration="33000" />
       <workItem from="1662831436966" duration="417000" />
       <workItem from="1663243858910" duration="64000" />
-      <workItem from="1663250609096" duration="1214000" />
+      <workItem from="1663250609096" duration="1676000" />
     </task>
     <servers />
   </component>
