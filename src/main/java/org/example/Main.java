@@ -7,7 +7,7 @@ public class Main {
 
     public static void run() {
         //DiscordInteractionsWrapper discord = new DiscordInteractionsWrapper();
-        discord("this should not update until saturday");
+        discord("i hope its not saturday ");
     }
 
     public static void discord(String test) {
