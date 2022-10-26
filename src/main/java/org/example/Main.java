@@ -9,7 +9,7 @@ public class Main{
         int inputEen = scanner.nextInt();
         System.out.println("Wat is getal 2");
         int inputTwee = scanner.nextInt();
-        System.out.println(inputEen + " + " + inputTwee + " = "+ TestClass.Add(inputTwee, inputTwee));
+        System.out.println(inputEen + " + " + inputTwee + " = "+ TestClass.Add(inputEen, inputTwee));
     }
 
 }

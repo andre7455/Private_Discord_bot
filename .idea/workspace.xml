@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="553b1ad3-2253-4d51-9025-ab53520e4be2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Private_Discord_bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Private_Discord_bot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,6 +129,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -160,7 +164,7 @@
       <workItem from="1664387042416" duration="67000" />
       <workItem from="1664436617213" duration="592000" />
       <workItem from="1664438905746" duration="18000" />
-      <workItem from="1666804672356" duration="425000" />
+      <workItem from="1666804672356" duration="1871000" />
     </task>
     <servers />
   </component>
@@ -185,5 +189,16 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/TestClass.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
