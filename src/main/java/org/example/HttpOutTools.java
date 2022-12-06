@@ -6,10 +6,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class HttpOutTools() {
+public class HttpOutTools {
     public static void main(String[] args) throws Exception {
 
-        HttpRequestExample http = new HttpRequestExample();
+        HttpOutTools http = new HttpOutTools();
 
         // Specify the URL to send the request to
         String url = "https://eoc114hzhb26z8d.m.pipedream.net";
@@ -31,7 +31,7 @@ public class HttpOutTools() {
     }
 
     // Method to send the HTTP request and return the response
-    private String sendRequest(String url, String method, String headers, String body) throws Exception {
+    public String sendRequest(String url, String method, String headers, String body) throws Exception {
         // Create a new URL object from the specified URL string
         URL obj = new URL(url);
 
