@@ -7,7 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HttpOutTools {
-    public void HttpOutTools(){
+    public void HttpOutTools() {
         HttpOutTools http = new HttpOutTools();
 
         // Specify the URL to send the request to
@@ -25,7 +25,7 @@ public class HttpOutTools {
         // Send the request and get the response
         try {
             response = http.sendRequest(url, method, headers, body);
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Sending the request was not posible");
         }
 

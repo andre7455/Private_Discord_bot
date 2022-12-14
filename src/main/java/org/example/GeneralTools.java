@@ -8,7 +8,8 @@ public class GeneralTools {
         scanner.nextLine();
         System.out.println("Press enter to continue");
     }
-    public void ClearTheTerminal(){
+
+    public void ClearTheTerminal() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }

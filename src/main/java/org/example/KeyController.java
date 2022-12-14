@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class KeyController {
     GeneralTools generalTools = new GeneralTools();
+
     public void WriteFile(String input) {
         //this will write a file in the root directory
         //todo add a check for a existing file and ask user what to do
@@ -23,12 +24,12 @@ public class KeyController {
         }
     }
 
-    public void RemoveKey(){
+    public void RemoveKey() {
         File file = new File("Storage.txt");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Are you sure you want to delete the file that stores the private key?[Y/N]");
-        if (scanner.nextLine().equals("Y") || scanner.nextLine().equals("y")){
-            if (file.delete()){
+        if (scanner.nextLine().equals("Y") || scanner.nextLine().equals("y")) {
+            if (file.delete()) {
                 System.out.println("The file has been deleted.");
                 generalTools.waitTillInput();
                 generalTools.ClearTheTerminal();
