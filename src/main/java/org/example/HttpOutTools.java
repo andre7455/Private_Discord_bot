@@ -7,8 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HttpOutTools {
-    public static void main(String[] args) throws Exception {
-
+    public void HttpOutTools(){
         HttpOutTools http = new HttpOutTools();
 
         // Specify the URL to send the request to
@@ -22,9 +21,14 @@ public class HttpOutTools {
 
         // Set the request headers (if any)
         String headers = "Content-Type: application/x-www-form-urlencoded\r\n";
-
+        String response = "Somthing went wrong when sending the request";
         // Send the request and get the response
-        String response = http.sendRequest(url, method, headers, body);
+        try {
+            response = http.sendRequest(url, method, headers, body);
+        } catch (Exception e){
+            System.out.println("Sending the request was not posible");
+        }
+
 
         // Print the response
         System.out.println(response);
