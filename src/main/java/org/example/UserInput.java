@@ -20,7 +20,14 @@ public class UserInput {
         System.out.println("5: Delete key");
         System.out.println("6: Check internet status");
         System.out.println("7: Debug place");
-        return scanner.nextInt();
+        try {
+            return scanner.nextInt();
+        } catch (Exception e) {
+            System.out.println("That input is not correct");
+            generalTools.waitTillInput();
+            return 7;
+        }
+
     }
 
     public void menuController(int choice) {
@@ -48,6 +55,8 @@ public class UserInput {
                 break;
             case 7:
                 System.out.println(keyController.GetKey());
+                break;
+            default:
                 break;
         }
     }
