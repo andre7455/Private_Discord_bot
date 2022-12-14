@@ -1,7 +1,5 @@
 package org.example;
 
-import java.awt.*;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -10,12 +8,12 @@ public class Main {
         instance.run();
     }
 
-    public void run(){
+    public void run() {
         UserInput userInput = new UserInput();
         boolean running = true;
         while (running) {
             int choice = userInput.menuOptions();
-            if (choice == 2){
+            if (choice == 2) {
                 break;
             } else {
                 userInput.menuController(choice);
