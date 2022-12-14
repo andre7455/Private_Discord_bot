@@ -15,7 +15,7 @@ public class Main {
         boolean running = true;
         while (running) {
             int choice = userInput.menuOptions();
-            if (choice == 0){
+            if (choice == 2){
                 break;
             } else {
                 userInput.menuController(choice);

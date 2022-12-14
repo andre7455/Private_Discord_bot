@@ -24,10 +24,6 @@ public class UserInput {
             case 1:
                 //Start bot
                 break;
-            case 2:
-                networkTools.checkInternetStatus();
-                //Exit Application
-                break;
             case 3:
                 //Show log
                 break;
@@ -38,6 +34,7 @@ public class UserInput {
                 //Delete key
                 break;
             case 6:
+                networkTools.checkInternetStatus();
                 break;
         }
     }
