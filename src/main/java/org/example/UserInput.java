@@ -15,7 +15,6 @@ public class UserInput {
         System.out.println("4: Add key");
         System.out.println("5: Delete key");
         System.out.println("6: Check internet status");
-        System.out.println("0: Exit application");
         return scanner.nextInt();
     }
 
@@ -26,6 +25,7 @@ public class UserInput {
                 //Start bot
                 break;
             case 2:
+                networkTools.checkInternetStatus();
                 //Exit Application
                 break;
             case 3:
@@ -38,7 +38,6 @@ public class UserInput {
                 //Delete key
                 break;
             case 6:
-                networkTools.checkInternetStatus();
                 break;
         }
     }
