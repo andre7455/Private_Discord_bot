@@ -14,7 +14,12 @@ public class Main {
         UserInput userInput = new UserInput();
         boolean running = true;
         while (running) {
-            userInput.menuOptions();
+            int choice = userInput.menuOptions();
+            if (choice == 0){
+                break;
+            } else {
+                userInput.menuController(choice);
+            }
         }
     }
 }

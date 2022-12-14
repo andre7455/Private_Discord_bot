@@ -1,5 +1,4 @@
 package org.example;
-
 import java.util.Scanner;
 
 public class UserInput {
@@ -16,10 +15,12 @@ public class UserInput {
         System.out.println("4: Add key");
         System.out.println("5: Delete key");
         System.out.println("6: Check internet status");
+        System.out.println("0: Exit application");
         return scanner.nextInt();
     }
 
     public void menuController(int choice) {
+        NetworkTools networkTools = new NetworkTools();
         switch (choice) {
             case 1:
                 //Start bot
@@ -37,7 +38,7 @@ public class UserInput {
                 //Delete key
                 break;
             case 6:
-                //check internet status
+                networkTools.checkInternetStatus();
                 break;
         }
     }
