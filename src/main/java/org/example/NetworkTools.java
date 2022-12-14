@@ -6,7 +6,7 @@ public class NetworkTools {
     public void checkInternetStatus(){
         try {
             // Get the InetAddress for the specified domain
-            InetAddress address = InetAddress.getByName("ksjdhfgkdjhf");
+            InetAddress address = InetAddress.getByName("www.discord.com");
 
             // Check if the address is reachable
             if (address.isReachable(5000)) {
