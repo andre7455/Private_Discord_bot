@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class UserInput {
     public int menuOptions() {
+        //todo when code is working remove debug place
         Scanner scanner = new Scanner(System.in);
         System.out.println("################################");
         System.out.println("Welcome to the backend of my discord bot");
@@ -16,11 +17,14 @@ public class UserInput {
         System.out.println("4: Add key");
         System.out.println("5: Delete key");
         System.out.println("6: Check internet status");
+        System.out.println("7: Debug place");
         return scanner.nextInt();
     }
 
     public void menuController(int choice) {
         NetworkTools networkTools = new NetworkTools();
+        KeyController keyController = new KeyController();
+        //todo when code is working remove debug place
         switch (choice) {
             case 1:
                 //Start bot
@@ -29,13 +33,18 @@ public class UserInput {
                 //Show log
                 break;
             case 4:
-                //Add key
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Please enter the key and press enter:");
+                keyController.WriteFile(scanner.nextLine());
                 break;
             case 5:
-                //Delete key
+                keyController.RemoveKey();
                 break;
             case 6:
                 networkTools.checkInternetStatus();
+                break;
+            case 7:
+                keyController.GetKey();
                 break;
         }
     }
