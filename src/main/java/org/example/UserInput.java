@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class UserInput {
     public int menuOptions() {
         //todo when code is working remove debug place
+        GeneralTools generalTools = new GeneralTools();
+        generalTools.ClearTheTerminal();
         Scanner scanner = new Scanner(System.in);
         System.out.println("################################");
         System.out.println("Welcome to the backend of my discord bot");
@@ -45,7 +47,7 @@ public class UserInput {
                 networkTools.checkInternetStatus();
                 break;
             case 7:
-                generalTools.ClearTheTerminal();
+                System.out.println(keyController.GetKey());
                 break;
         }
     }
