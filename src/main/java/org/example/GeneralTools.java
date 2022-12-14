@@ -6,4 +6,8 @@ public class GeneralTools {
     public void waitTillInput() {
         Scanner scanner = new Scanner(System.in);
     }
+    public void ClearTheTerminal(){
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
 }

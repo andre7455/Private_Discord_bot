@@ -22,6 +22,7 @@ public class UserInput {
     }
 
     public void menuController(int choice) {
+        GeneralTools generalTools = new GeneralTools();
         NetworkTools networkTools = new NetworkTools();
         KeyController keyController = new KeyController();
         //todo when code is working remove debug place
@@ -44,7 +45,7 @@ public class UserInput {
                 networkTools.checkInternetStatus();
                 break;
             case 7:
-                keyController.GetKey();
+                generalTools.ClearTheTerminal();
                 break;
         }
     }
