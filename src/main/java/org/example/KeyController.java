@@ -10,7 +10,7 @@ public class KeyController {
 
     public void WriteFile(String input) {
         //this will write a file in the root directory
-        if(GetKey().equals("")){
+        if (GetKey().equals("")) {
             try {
                 FileWriter writer = new FileWriter("Storage.txt");
                 writer.write(input);
