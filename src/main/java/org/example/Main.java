@@ -9,8 +9,7 @@ public class Main {
 
     public void run() {
         UserInput userInput = new UserInput();
-        boolean running = true;
-        while (running) {
+        while (1 == 1) {
             int choice = userInput.menuOptions();
             if (choice == 2) {
                 break;
