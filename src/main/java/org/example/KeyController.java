@@ -10,18 +10,24 @@ public class KeyController {
 
     public void WriteFile(String input) {
         //this will write a file in the root directory
-        //todo add a check for a existing file and ask user what to do
-        try {
-            FileWriter writer = new FileWriter("Storage.txt");
-            writer.write(input);
-            writer.close();
-            generalTools.ClearTheTerminal();
-        } catch (Exception e) {
-            System.out.println("File could not be written for some reason");
+        if(GetKey().equals("")){
+            try {
+                FileWriter writer = new FileWriter("Storage.txt");
+                writer.write(input);
+                writer.close();
+                generalTools.ClearTheTerminal();
+            } catch (Exception e) {
+                System.out.println("File could not be written for some reason");
+                generalTools.waitTillInput();
+                generalTools.ClearTheTerminal();
+                //e.printStackTrace();
+            }
+        } else {
+            System.out.println("There was already a key stored");
+            System.out.println("Delete the Key first before writing a new one");
             generalTools.waitTillInput();
-            generalTools.ClearTheTerminal();
-            //e.printStackTrace();
         }
+
     }
 
     public void RemoveKey() {
@@ -54,10 +60,11 @@ public class KeyController {
                 Filecontent = Filecontent + (char) character;
             }
             reader.close();
+            return Filecontent;
         } catch (Exception e) {
-            e.printStackTrace();
+            generalTools.waitTillInput();
+            return Filecontent;
         }
-        return Filecontent;
         //todo:Make it so that this file will add everything to a string and returns it. and remove the sout that echo's the code
     }
 }
