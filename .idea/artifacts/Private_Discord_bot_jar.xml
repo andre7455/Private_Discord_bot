@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Private_Discord_bot:jar">
+    <output-path>$PROJECT_DIR$/build/artifacts/Private_Discord_bot_jar</output-path>
+    <root id="archive" name="Private_Discord_bot.jar">
+      <element id="module-output" name="Private_Discord_bot" />
+    </root>
+  </artifact>
+</component>
