@@ -18,6 +18,7 @@ public class UserInput {
         System.out.println("5: Delete key");
         System.out.println("6: Check internet status");
         System.out.println("7: Debug place");
+        System.out.println("8: Calculate progress out of 2000");
         try {
             return scanner.nextInt();
         } catch (Exception e) {
@@ -32,6 +33,7 @@ public class UserInput {
         GeneralTools generalTools = new GeneralTools();
         NetworkTools networkTools = new NetworkTools();
         KeyController keyController = new KeyController();
+        Scanner scanner = new Scanner(System.in);
         //todo when code is working remove debug place
         switch (choice) {
             case 1:
@@ -41,7 +43,6 @@ public class UserInput {
                 //Show log
                 break;
             case 4:
-                Scanner scanner = new Scanner(System.in);
                 System.out.println("Please enter the key and press enter:");
                 keyController.WriteFile(scanner.nextLine());
                 break;
@@ -53,6 +54,11 @@ public class UserInput {
                 break;
             case 7:
                 System.out.println(keyController.GetKey());
+                break;
+            case 8:
+                System.out.println("How many points have you earned?");
+                System.out.println(generalTools.calculateProgress(scanner.nextInt()));
+                generalTools.waitTillInput();
                 break;
             default:
                 break;
