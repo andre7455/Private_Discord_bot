@@ -24,10 +24,8 @@ public class HttpOutTools {
         try {
             response = http.sendRequest(url, method, headers, body);
         } catch (Exception e) {
-            System.out.println("Sending the request was not posible");
+            System.out.println(response);
         }
-
-
         // Print the response
         System.out.println(response);
     }

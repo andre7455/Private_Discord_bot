@@ -38,6 +38,8 @@ public class UserInput {
         switch (choice) {
             case 1:
                 //Start bot
+                MessageController messageController = new MessageController();
+                messageController.messageController();
                 break;
             case 3:
                 //Show log
