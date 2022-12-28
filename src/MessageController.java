@@ -1,5 +1,7 @@
 import java.util.Scanner;
 public class MessageController {
+
+    //todo: the code is broke, need to fix this
     public void messageController(){
         int i = 0;
         Scanner scanner = new Scanner(System.in);

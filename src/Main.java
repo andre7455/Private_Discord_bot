@@ -6,6 +6,7 @@ public class Main {
     }
 
     public void run() {
+        System.out.println("kaas");
         boolean running = true;
         UserInput userInput = new UserInput();
         while (running) {
